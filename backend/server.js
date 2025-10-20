@@ -13,9 +13,9 @@ const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: "*" } });
 
 // Routes
-import authRoutes from "./routes/auth.js";
-import verifyRoutes from "./routes/verify.js";
-import carRoutes from "./routes/cars.js";
+import authRoutes from "./backend/routes/auth.js";
+import verifyRoutes from "./backend/routes/verify.js";
+import carRoutes from "./backend/routes/cars.js";
 
 app.use("/auth", authRoutes);
 app.use("/verify", verifyRoutes);
